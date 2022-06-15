@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label><input id="nhapmang" type="number"></label>
+<button onclick="layphantu()">Thêm phần tử</button>
+<button onclick="hienthi()">Hiển thị phần tử</button>
+<button onclick="tinhtong()">Tính tổng</button><br><br>
+<p id="result"></p>
+</body>
+<script>
+    let arr = Array();
+    let x = 0;
+    function layphantu(){
+        arr[x] = parseInt(document.getElementById('nhapmang').value);
+        // arr.push(x)
+        x++;
+        document.getElementById("nhapmang").value = '';
+    }
+    // Đưa ra màn hình
+    function hienthi() {
+        for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i])
+        }
+        document.getElementById("result").innerHTML = arr
+    }
+    // Tính tổng
+    // let sum = 0
+    // function tinhtong() {
+    //     for (let i = 0; i < arr.length; i++) {
+    //         sum += Number[arr[i]];
+    //     }
+    //     document.write(sum)
+    // }
+</script>
+</html>
