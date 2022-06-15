@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra số có thuộc mảng không xong xóa</title>
+</head>
+<body>
+<script>
+    let arr = [25, 24, 20, 1, 12, 22, 11, 5, 16, 6];
+    let V = +prompt("Nhập số của bạn vào")
+    V = Number(V)
+    for (let i = 0; i < arr.length; i++) {
+        if (V == arr[i]){
+            arr.splice(i,1);
+            arr.push(0)
+        }
+    }
+    console.log(arr);
+</script>
+</body>
+</html>

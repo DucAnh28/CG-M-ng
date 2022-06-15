@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+<script>
+    let array1 = [12,20,2,50,1,6,10,6,8,11];
+    // // dùng hàm của mảng
+    array1.reverse();
+    console.log(array1)
+    // dùng vòng lặp để chuyển
+    let first = 0
+    let last = array1.length-1;
+    while (first<last){
+        let b = array1[first];
+        array1[first] = array1[last];
+        array1[last] = b;
+        first++
+        last--
+    }
+document.write(array1)
+</script>
+</body>
+</html>

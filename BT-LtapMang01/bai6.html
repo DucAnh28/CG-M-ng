@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra số nhập vào có thuộc mảng</title>
+</head>
+<body>
+<script>
+    let arr = [25, 24, 20, 1, 12, 22, 11, 5, 16, 6];
+    let V = +prompt("Nhập số của bạn vào")
+    V = Number(V)
+    let index = false
+    for (let i = 0; i < arr.length; i++) {
+        if (V == arr[i]){
+            index= true
+        }
+    }
+    if (index==1){
+        document.write("V is in the array")
+    }
+    else {
+        document.write("V is not in the array")
+    }
+
+</script>
+</body>
+</html>
