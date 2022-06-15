@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra 2 chuỗi có phần tử giống nhau không</title>
+</head>
+<body>
+<script>
+    let arr= [121,"concac",12,"jasid","yolo","hanoi",12,13]
+    let arr1= [121,"concac",12,"jasid","ssxx","yolo","hanoi",12,13]
+    let sosanh = JSON.stringify(arr) === JSON.stringify(arr1)
+    if (sosanh == true){
+        alert("2 mảng giống nhau")
+    }
+    else {
+        alert("2 mảng không giống nhau")
+    }
+</script>
+</body>
+</html>

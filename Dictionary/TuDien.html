@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+<script>
+    let arr_eng = ["one","two","three","four","five"];
+    let arr_vnm = ["một","hai","ba","bốn","năm"];
+    let value = prompt("Nhập từ mà bạn muốn dịch");
+    let index = -1
+    for (let i = 0; i < arr_eng.length; i++) {
+        if (value === arr_eng[i]){
+            index = i;
+            break;
+        }
+    }
+    if (index == -1){
+        document.write("Từ mà bạn cần tìm không có");
+    }
+    else {
+        document.write("Từ mà bạn cần dịch là: " + arr_vnm[index]);
+    }
+</script>
+</body>
+</html>
